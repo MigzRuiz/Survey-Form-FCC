@@ -4,10 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Survey Form</title>
     <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,400,600" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="top">
+            <h1 id="title" class="top__style">Survey</h1>
+            <h1 id="title" class="top__title">Survey Form</h1>
+        </div>
+        <div class="content">
+            <div class="form__group">
+                <label for="name" class="form__label"></label>
+                <input type="text" placeholder="Full Name" id="name" class="form__input"/>
+            </div>
+            <div class="form__group">
+                <label for="email" class="form__label"></label>
+                <input type="email" placeholder="Email Address" id="email" class="form__input"/>
+            </div>
+            <div class="form__group">
+                <label for="age" class="form__label"></label>                    
+                <input type="text" placeholder="Age" id="age" class="form__input">
+            </div>
+                    <div class="dropdown">
+                        <p>What option best describes your current role?</p>
+                        <select class="dropdown-box">
+                            <option value="student">Student</option>
+                            <option value="fulltime">Full Time Job</option>
+                            <option value="fulltime-l">Full Time Learner</option>
+                            <option value="pnts">Prefer not to say</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="radio">
+                        <p>How likely is that you would recommend freeCodeCamp to a friend?</p>
+                        <!--RADIO BUTTONS HERE-->
+                    </div>
+        </div>
+       
+    </div>
 </body>
 </html>
