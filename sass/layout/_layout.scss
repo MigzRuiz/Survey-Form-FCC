@@ -1,0 +1,50 @@
+.container {
+    max-width: 120rem;
+    min-height: 80rem;
+    margin: 8rem auto;
+
+    border-radius: 3.5rem;
+    box-shadow: var(--shadow-dark);
+    background-color: var(--color-white);
+    
+    overflow: hidden;
+    //position: relative;
+}
+
+.top {
+    background-color: var(--color-purple);
+    position: relative;
+
+    &__title{
+        color: var(--color-white);
+        padding: 5rem;
+        text-align: center;
+    }
+    &__style{
+        font-size: 20rem;
+        position: absolute;
+        right:-300px;
+        top: 240px;
+        transform: rotate(-90deg);
+        opacity: .1;
+    }
+}
+.content {
+    margin: -2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50rem;
+}
+
+.form {
+    &__input{
+        padding: 1.5rem 5rem;
+        border-radius: 3.5rem;
+        border: 2px solid var(--color-grey);
+    }
+    &__group {
+        z-index: 999; 
+    }
+}
