@@ -1,0 +1,190 @@
+.u-margin-bottom-s {
+  margin-bottom: 1rem; }
+
+:root {
+  --color-pink: #f366a3;
+  --color-pink-dark: #f55699;
+  --color-purple: #736cfa;
+  --color-purple-dark: #252a41;
+  --color-orange: #f67d5a;
+  --color-grey: #f7f7f7;
+  --color-grey-2: #e7e7e7;
+  --color-white: #fff;
+  --shadow-dark: 0 2rem 6rem rgba(0,0,0, .9);
+  /*
+        Gradients
+        color-pink + color-purple
+        color-orange + color-pink-dark
+    */ }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  background-color: var(--color-purple-dark); }
+
+body {
+  font-family: "open sans", sans-serif;
+  font-size: 1.6rem; }
+
+.budget {
+  color: var(--color-grey); }
+  .budget__value {
+    font-size: 4rem; }
+  .budget__income {
+    text-transform: uppercase; }
+  .budget__expense {
+    text-transform: uppercase; }
+
+.add * {
+  font-family: inherit; }
+
+.income__title {
+  text-transform: uppercase;
+  color: var(--color-purple); }
+
+.income-value {
+  color: var(--color-purple); }
+
+.expense__title {
+  text-transform: uppercase;
+  color: var(--color-pink); }
+
+.expense-value {
+  color: var(--color-pink); }
+
+.app-container {
+  max-width: 120rem;
+  min-height: 80rem;
+  margin: 8rem auto;
+  border-radius: 3.5rem;
+  box-shadow: var(--shadow-dark);
+  background-color: var(--color-white);
+  overflow: hidden;
+  position: relative; }
+
+.budget {
+  background-image: linear-gradient(to right, var(--color-pink-dark), var(--color-orange));
+  text-align: center;
+  padding: 2rem 0; }
+  .budget__group {
+    display: flex;
+    justify-content: space-around; }
+
+.add {
+  padding: 2rem;
+  background-color: var(--color-grey);
+  border-bottom: 1px solid var(--color-grey-2);
+  display: flex;
+  justify-content: space-around; }
+  .add__type {
+    height: 4rem;
+    padding: 1rem;
+    border: 1px solid var(--color-grey-2);
+    margin-right: 2rem;
+    transition: border 0.3s; }
+    .add__type:focus {
+      outline: none;
+      border: 1px var(--color-purple) solid; }
+  .add__description {
+    height: 4rem;
+    padding: 1rem;
+    border: 1px solid var(--color-grey-2);
+    border-radius: .4rem;
+    margin-right: 2rem;
+    transition: border 0.3s; }
+    .add__description:focus {
+      outline: none;
+      border: 1px var(--color-purple) solid; }
+  .add__value {
+    height: 4rem;
+    width: 8rem;
+    padding: 1rem;
+    border: 1px solid var(--color-grey-2);
+    border-radius: .4rem;
+    margin-right: 2rem;
+    transition: border 0.3s; }
+    .add__value:focus {
+      outline: none;
+      border: 1px solid var(--color-purple); }
+  .add__btn {
+    font-size: 3.5rem;
+    background: none;
+    border: none;
+    vertical-align: middle;
+    cursor: pointer;
+    color: var(--color-purple); }
+    .add__btn:active {
+      transform: translateY(2px); }
+    .add__btn:focus {
+      outline: none; }
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+  padding-bottom: 2rem; }
+  .content .income {
+    width: 40%; }
+  .content .expense {
+    width: 40%; }
+
+.item {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1.4rem;
+  border-bottom: 1px var(--color-grey-2) solid;
+  justify-content: center; }
+  .item * {
+    transition: transform .5s; }
+  .item:first-child {
+    border-top: 1px var(--color-grey-2) solid; }
+  .item:nth-child(even) {
+    background-color: var(--color-grey); }
+  .item__description {
+    margin-right: auto; }
+  .item__delete--btn {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    vertical-align: middle;
+    cursor: pointer;
+    display: none; }
+    .item__delete--btn:active {
+      transform: translateY(2px); }
+    .item__delete--btn:focus {
+      outline: none; }
+  .item__percentage {
+    background-color: rgba(246, 125, 90, 0.3);
+    font-size: 1.1rem;
+    padding: .2rem 1rem;
+    color: var(--color-orange);
+    border-radius: .5rem;
+    align-self: center; }
+  .item:hover .item__delete--btn {
+    display: unset; }
+  .item:hover .item__delete--btn {
+    display: unset; }
+  .item:hover .item__value {
+    transform: translateX(-1rem); }
+  .item:hover .item__percentage {
+    transform: translateX(-1rem); }
+
+.right {
+  display: flex; }
+  .right-item:not(:last-child) {
+    margin-right: 1.2rem; }
+
+.pink {
+  color: var(--color-pink-dark); }
+
+.pink-focus:focus {
+  border: 1px solid var(--color-pink-dark); }
