@@ -13,36 +13,113 @@
         <div class="top">
             <h1 id="title" class="top__style">Survey</h1>
             <h1 id="title" class="top__title">Survey Form</h1>
+            <h3 id="title" class="top__title-sub">This is for a freeCodeCamp Challenge. Made by Miguel Ruiz.</h1>
         </div>
         <div class="content">
             <div class="form__group">
                 <label for="name" class="form__label"></label>
-                <input type="text" placeholder="Full Name" id="name" class="form__input"/>
+                <input type="text" placeholder="Full Name" id="name" class="form__input" required/>
             </div>
             <div class="form__group">
                 <label for="email" class="form__label"></label>
-                <input type="email" placeholder="Email Address" id="email" class="form__input"/>
+                <input type="email" placeholder="Email Address" id="email" class="form__input" required/>
             </div>
             <div class="form__group">
                 <label for="age" class="form__label"></label>                    
-                <input type="text" placeholder="Age" id="age" class="form__input">
+                <input type="text" placeholder="Age" id="age" class="form__input" required/>
             </div>
-                    <div class="dropdown">
-                        <p>What option best describes your current role?</p>
-                        <select class="dropdown-box">
-                            <option value="student">Student</option>
-                            <option value="fulltime">Full Time Job</option>
-                            <option value="fulltime-l">Full Time Learner</option>
-                            <option value="pnts">Prefer not to say</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-                    <div class="radio">
-                        <p>How likely is that you would recommend freeCodeCamp to a friend?</p>
-                        <!--RADIO BUTTONS HERE-->
-                    </div>
+            <div class="dropdown">
+                <p>What option best describes your current role?</p>
+                <select class="dropdown-box">
+                    <option value="student">Student</option>
+                    <option value="fulltime">Full Time Job</option>
+                    <option value="fulltime-l">Full Time Learner</option>
+                    <option value="pnts">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="radio">
+                <p>How likely is that you would recommend freeCodeCamp to a friend?</p>
+                <!--RADIO BUTTONS HERE-->
+                <div class="form__radio-group">
+                    <input type="radio" id="large" class="form__radio-input" name="size">
+                    <label for="large" class="form__radio-label">
+                    <span class="form__radio-button"></span>
+                    Definitely
+                    </label>
+                </div>
+                <div class="form__radio-group">
+                    <input type="radio" id="large" class="form__radio-input" name="size">
+                    <label for="large" class="form__radio-label">
+                    <span class="form__radio-button"></span>
+                    Maybe
+                    </label>
+                </div>
+                <div class="form__radio-group">
+                    <input type="radio" id="large" class="form__radio-input" name="size">
+                    <label for="large" class="form__radio-label"></label>
+                    <span class="form__radio-button"></span>
+                    Not sure
+                </div>
+            </div>
+            <div class="dropdown">
+                <p>What do you like most in freeCodeCamp?</p>
+                <select class="dropdown-box">
+                    <option value="challenges">Challenges</option>
+                    <option value="projects">Projects</option>
+                    <option value="community">Community</option>
+                    <option value="opensource">Open Source</option>
+                </select>
+            </div>
+
+            <p>Things that should be improved in the future (Check all that apply):</p>
+            <div class="form__checkbox">
+                <label class="form__checkbox-label">
+                    <input type="checkbox" class="form__checkbox-input">Front-end Projects
+                    <span class="form__checkbox-mark"></span>
+                </label>
+                <label class="form__checkbox-label">
+                    <input type="checkbox" class="form__checkbox-input">Back-end Projects
+                    <span class="form__checkbox-mark"></span>
+                </label>
+                <label class="form__checkbox-label">
+                    <input type="checkbox" class="form__checkbox-input">Data Visualization
+                    <span class="form__checkbox-mark"></span>
+                </label>
+                <label class="form__checkbox-label">
+                    <input type="checkbox" class="form__checkbox-input">Challenges
+                    <span class="form__checkbox-mark"></span>
+                </label>
+                <label class="form__checkbox-label">
+                    <input type="checkbox" class="form__checkbox-input">Open Source Community
+                    <span class="form__checkbox-mark"></span>
+                </label>
+                <label class="form__checkbox-label">
+                        <input type="checkbox" class="form__checkbox-input">Gitter help rooms
+                        <span class="form__checkbox-mark"></span>
+                    </label>
+                <label class="form__checkbox-label">
+                    <input type="checkbox" class="form__checkbox-input">Videos
+                    <span class="form__checkbox-mark"></span>
+                </label>
+                <label class="form__checkbox-label">
+                    <input type="checkbox" class="form__checkbox-input">City Meetups
+                    <span class="form__checkbox-mark"></span>
+                </label>
+                <label class="form__checkbox-label">
+                    <input type="checkbox" class="form__checkbox-input">Wiki
+                    <span class="form__checkbox-mark"></span>
+                </label>
+                <label class="form__checkbox-label">
+                    <input type="checkbox" class="form__checkbox-input">Forum
+                    <span class="form__checkbox-mark"></span>
+                </label>
+                <label class="form__checkbox-label">
+                    <input type="checkbox" class="form__checkbox-input">Additional Courses
+                    <span class="form__checkbox-mark"></span>
+                </label>
+            </div>
         </div>
-       
     </div>
 </body>
 </html>

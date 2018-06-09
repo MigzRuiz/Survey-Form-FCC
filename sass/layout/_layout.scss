@@ -1,5 +1,5 @@
 .container {
-    max-width: 120rem;
+    max-width: 80rem;
     min-height: 80rem;
     margin: 8rem auto;
 
@@ -17,8 +17,18 @@
 
     &__title{
         color: var(--color-white);
-        padding: 5rem;
-        text-align: center;
+        font-size: 5rem;
+        padding: 4rem 6rem 0 6rem;
+        text-transform: uppercase;
+        // /text-align: center;
+        line-height: 4rem;
+
+        &-sub{
+            color: var(--color-white);
+            font-weight: 300;
+            padding: 0 6rem 4rem 6rem;
+            font-size: 1.5rem;
+        }
     }
     &__style{
         font-size: 20rem;
@@ -30,21 +40,57 @@
     }
 }
 .content {
-    margin: -2rem;
-    text-align: center;
+    margin-top: -6rem;
+    padding: 4rem;
+
+    //text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 50rem;
+
+    & > *:not(:last-child){
+        margin-bottom: 3rem;
+    }
 }
 
 .form {
     &__input{
-        padding: 1.5rem 5rem;
+        padding: 1.5rem 2rem;
+        width: 60%;
         border-radius: 3.5rem;
-        border: 2px solid var(--color-grey);
+        border: 2px solid var(--color-grey); 
+        //box-shadow: var(--shadow-dark);
+        color: inherit;
+        transition: all .3s;
+
+        &:focus {
+            outline: none;
+            box-shadow: var(--shadow-dark);
+            border: 3px solid var(--color-purple);
+        }
+
+        &:focus:invalid {
+            border: 3px solid var(--color-pink);
+        }
+
+        //To make the placeholder grey
+        &::-webkit-input-placeholder { 
+            color:var(--color-grey);
+        }
+
     }
     &__group {
         z-index: 999; 
+    }
+    &__checkbox {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 14rem;
+        margin-top: -2rem;
+
+        &-input {
+            margin-right: 2rem;
+        }
     }
 }

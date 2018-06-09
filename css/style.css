@@ -1,3 +1,6 @@
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important; }
+
 :root {
   --color-pink: #f366a3;
   --color-pink-dark: #f55699;
@@ -7,7 +10,7 @@
   --color-grey: #f7f7f7;
   --color-grey: #e7e7e7;
   --color-white: #fff;
-  --shadow-dark: 0 2rem 6rem rgba(0,0,0, .9);
+  --shadow-dark: 0 2rem 9rem rgba(0,0,0, .1);
   /*
         Gradients
         color-pink + color-purple
@@ -33,7 +36,7 @@ body {
   font-size: 1.6rem; }
 
 .container {
-  max-width: 120rem;
+  max-width: 80rem;
   min-height: 80rem;
   margin: 8rem auto;
   border-radius: 3.5rem;
@@ -46,8 +49,15 @@ body {
   position: relative; }
   .top__title {
     color: var(--color-white);
-    padding: 5rem;
-    text-align: center; }
+    font-size: 5rem;
+    padding: 4rem 6rem 0 6rem;
+    text-transform: uppercase;
+    line-height: 4rem; }
+    .top__title-sub {
+      color: var(--color-white);
+      font-weight: 300;
+      padding: 0 6rem 4rem 6rem;
+      font-size: 1.5rem; }
   .top__style {
     font-size: 20rem;
     position: absolute;
@@ -57,17 +67,38 @@ body {
     opacity: .1; }
 
 .content {
-  margin: -2rem;
-  text-align: center;
+  margin-top: -6rem;
+  padding: 4rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 50rem; }
+  justify-content: space-between; }
+  .content > *:not(:last-child) {
+    margin-bottom: 3rem; }
 
 .form__input {
-  padding: 1.5rem 5rem;
+  padding: 1.5rem 2rem;
+  width: 60%;
   border-radius: 3.5rem;
-  border: 2px solid var(--color-grey); }
+  border: 2px solid var(--color-grey);
+  color: inherit;
+  transition: all .3s; }
+  .form__input:focus {
+    outline: none;
+    box-shadow: var(--shadow-dark);
+    border: 3px solid var(--color-purple); }
+  .form__input:focus:invalid {
+    border: 3px solid var(--color-pink); }
+  .form__input::-webkit-input-placeholder {
+    color: var(--color-grey); }
 
 .form__group {
   z-index: 999; }
+
+.form__checkbox {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 14rem;
+  margin-top: -2rem; }
+  .form__checkbox-input {
+    margin-right: 2rem; }
